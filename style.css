@@ -1,0 +1,37 @@
+:root{
+    --vividGamboge: #FF9500;
+    --eerieBlack: #1C1C1C;
+    --darkLiver: #505050;
+    --lightGray:  #D4D4D2;
+}
+*{
+    font-family:roboto;
+}
+.container{
+    display:grid;
+    background-color: black;
+    border: 5px solid transparent;
+    border-radius: 1em;
+    grid-template-columns: repeat(4, 1fr);
+    width: fit-content;
+    gap:1ch;
+    padding:1em;
+}
+
+.display{
+    color:white;
+    grid-column: span 4;
+    text-align: end;
+}
+
+
+
+button{
+    color:white;
+    border-radius: 1rem;
+    border-color:transparent;
+}
+
+.grid-span-2{
+    grid-column:span 2;
+}
