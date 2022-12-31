@@ -38,11 +38,16 @@ body{
 
 button{
     color:white;
-    border-radius: 4em;
+    border-radius: 2em;
     border-color:transparent;
+    border-width: 5px;
     font-size:3ch;
 }
+button:active{
+    border-color:white;
+    border-style: solid;
 
+}
 .grid-span-2{
     grid-column:span 2;
 }
