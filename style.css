@@ -20,8 +20,8 @@ body{
     border-radius: 1em;
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
-    width: 10em;
-    height: 15em;
+    width: 20em;
+    height: 30em;
     gap:1ch;
     padding:1em;
 }
@@ -31,14 +31,16 @@ body{
     grid-column: span 4;
     text-align: end;
     width:1fr;
-    font-size:3ch;
+    font-weight: bold;
+    font-size:5ch;
 }
 
 
 button{
     color:white;
-    border-radius: 2em;
+    border-radius: 4em;
     border-color:transparent;
+    font-size:3ch;
 }
 
 .grid-span-2{
