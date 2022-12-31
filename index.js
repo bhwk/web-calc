@@ -1,4 +1,4 @@
-function addClasses(){
+function setupColours(){
     const buttons = document.querySelectorAll('button');
     for(let i=1; i<=buttons.length; i++){
         if (i<4) {
@@ -9,9 +9,7 @@ function addClasses(){
             buttons[i-1].style.setProperty('background-color','var(--vividGamboge');
             buttons[i-1].style.setProperty('color', 'white');
         }
-        else{
-            buttons[i-1].style.setProperty('background-color','var(--darkLiver)');
-        }
+        else buttons[i-1].style.setProperty('background-color','var(--darkLiver)');
 
     }
 
@@ -23,5 +21,14 @@ function addListeners(){
     });
 }
 
+function addClasses(){
+    const buttons = document.querySelectorAll('button');
+    buttons.forEach((button)=>{
+        if(!isNaN(Number(button.textContent))) button.classList.add('number');
+        else button.classList.add('operator');
+    })
+}
+
+setupColours();
 addClasses();
 addListeners();
